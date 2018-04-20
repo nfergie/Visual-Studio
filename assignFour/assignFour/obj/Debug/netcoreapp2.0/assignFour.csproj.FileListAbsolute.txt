@@ -1,0 +1,11 @@
+C:\Users\fergie\source\repos\assignFour\assignFour\bin\Debug\netcoreapp2.0\assignFour.deps.json
+C:\Users\fergie\source\repos\assignFour\assignFour\bin\Debug\netcoreapp2.0\assignFour.runtimeconfig.json
+C:\Users\fergie\source\repos\assignFour\assignFour\bin\Debug\netcoreapp2.0\assignFour.runtimeconfig.dev.json
+C:\Users\fergie\source\repos\assignFour\assignFour\bin\Debug\netcoreapp2.0\assignFour.dll
+C:\Users\fergie\source\repos\assignFour\assignFour\bin\Debug\netcoreapp2.0\assignFour.pdb
+C:\Users\fergie\source\repos\assignFour\assignFour\obj\Debug\netcoreapp2.0\assignFour.csprojResolveAssemblyReference.cache
+C:\Users\fergie\source\repos\assignFour\assignFour\obj\Debug\netcoreapp2.0\assignFour.csproj.CoreCompileInputs.cache
+C:\Users\fergie\source\repos\assignFour\assignFour\obj\Debug\netcoreapp2.0\assignFour.AssemblyInfoInputs.cache
+C:\Users\fergie\source\repos\assignFour\assignFour\obj\Debug\netcoreapp2.0\assignFour.AssemblyInfo.cs
+C:\Users\fergie\source\repos\assignFour\assignFour\obj\Debug\netcoreapp2.0\assignFour.dll
+C:\Users\fergie\source\repos\assignFour\assignFour\obj\Debug\netcoreapp2.0\assignFour.pdb

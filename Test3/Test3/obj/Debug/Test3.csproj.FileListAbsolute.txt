@@ -1,0 +1,7 @@
+C:\Users\fergie\source\repos\Test3\Test3\bin\Debug\Test3.exe.config
+C:\Users\fergie\source\repos\Test3\Test3\bin\Debug\Test3.exe
+C:\Users\fergie\source\repos\Test3\Test3\bin\Debug\Test3.pdb
+C:\Users\fergie\source\repos\Test3\Test3\obj\Debug\Test3.csprojResolveAssemblyReference.cache
+C:\Users\fergie\source\repos\Test3\Test3\obj\Debug\Test3.csproj.CoreCompileInputs.cache
+C:\Users\fergie\source\repos\Test3\Test3\obj\Debug\Test3.exe
+C:\Users\fergie\source\repos\Test3\Test3\obj\Debug\Test3.pdb

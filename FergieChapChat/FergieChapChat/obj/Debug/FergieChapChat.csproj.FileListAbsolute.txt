@@ -1,0 +1,12 @@
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\bin\Debug\FergieChapChat.exe.config
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\bin\Debug\FergieChapChat.exe
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\bin\Debug\FergieChapChat.pdb
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.csprojResolveAssemblyReference.cache
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.ChatForm.resources
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.LoginForm.resources
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.Properties.Resources.resources
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.csproj.GenerateResource.Cache
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.csproj.CoreCompileInputs.cache
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.exe
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\obj\Debug\FergieChapChat.pdb
+C:\Users\fergie\source\repos\FergieChapChat\FergieChapChat\bin\Debug\ChapNet.dll

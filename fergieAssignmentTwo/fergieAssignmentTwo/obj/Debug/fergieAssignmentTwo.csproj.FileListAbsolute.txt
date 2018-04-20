@@ -1,0 +1,7 @@
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\bin\Debug\fergieAssignmentTwo.exe.config
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\bin\Debug\fergieAssignmentTwo.exe
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\bin\Debug\fergieAssignmentTwo.pdb
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\obj\Debug\fergieAssignmentTwo.csprojResolveAssemblyReference.cache
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\obj\Debug\fergieAssignmentTwo.csproj.CoreCompileInputs.cache
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\obj\Debug\fergieAssignmentTwo.exe
+C:\Users\fergie\source\repos\fergieAssignmentTwo\fergieAssignmentTwo\obj\Debug\fergieAssignmentTwo.pdb
