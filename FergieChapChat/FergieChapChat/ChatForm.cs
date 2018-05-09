@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace FergieChapChat
 {
     public partial class ChatForm : Form, IChapChatReceiver
     {
-        delegate void MessageDelegate(string message);
+        delegate void MessageDelegate(string username, string message);
         delegate int AddUsernameDelegate(object username);
         delegate void RemoveUsernameDelegate(object username);
         LoginForm loginForm;
@@ -38,7 +39,7 @@ namespace FergieChapChat
                 if (!String.IsNullOrEmpty(messageBox.Text))
                 {
                     netDriver.SendMessage(messageBox.Text);
-                    chatLog.Text += FormatChatString(GetUsername(), messageBox.Text);
+                    WriteToLog(GetUsername(), messageBox.Text);
                     messageBox.Text = "";
                 }
                 e.SuppressKeyPress = true;
@@ -50,7 +51,7 @@ namespace FergieChapChat
             if (!String.IsNullOrEmpty(messageBox.Text))
             {
                 netDriver.SendMessage(messageBox.Text);
-                chatLog.Text  += FormatChatString(GetUsername(), messageBox.Text);
+                WriteToLog(GetUsername(), messageBox.Text);
                 messageBox.Text = "";
             }
         }
@@ -62,8 +63,8 @@ namespace FergieChapChat
 
         public void OnReceiveMessage(string sender, string receivedMessage)
         {
-            this.Invoke(new MessageDelegate(chatLog.AppendText), 
-                FormatChatString(sender, receivedMessage));
+            this.Invoke(new MessageDelegate(WriteToLog), 
+                sender, receivedMessage);
 
             if (!onlineUsers.Items.Contains(sender))
             {
@@ -104,13 +105,84 @@ namespace FergieChapChat
             {
                 this.Close();
             }
+            LoadLog();
         }
 
-        public string FormatChatString(string username, string message)
+
+        public void WriteToLog(string username, string message)
         {
             string formattedString = "[" + username + "] ";
             formattedString += DateTime.Now.ToString("h:mm tt");
-            return formattedString+= " " + message + Environment.NewLine;
+            formattedString += " " + message;
+
+            chatLog.Text += formattedString + Environment.NewLine;
+
+            string path = @"chatLog.txt";
+            try
+            {
+                using (StreamWriter writer = File.AppendText(path))
+                {
+                    writer.WriteLine(formattedString);
+                }
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageBox.Show("You don't have access for the file you're trying " +
+                    "to write to");
+            }
+            catch(ArgumentException)
+            {
+                MessageBox.Show("The path is invalid");
+            }
+            catch (PathTooLongException)
+            {
+                MessageBox.Show("The path you've used is too long");
+            }
+            catch (DirectoryNotFoundException)
+            {
+                MessageBox.Show("The directory your file is in was not found");
+            }
+            catch (NotSupportedException)
+            {
+                MessageBox.Show("Your path is in an invalid format");
+            }
+        }
+
+        public void LoadLog()
+        {
+
+            try
+            {
+                using(StreamReader reader = File.OpenText(@"chatlog.txt"))
+                {
+                    string line;
+                    while((line = reader.ReadLine()) != null)
+                    {
+                        chatLog.AppendText(line + Environment.NewLine);
+                    }
+                }
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageBox.Show("You don't have access for the file you're trying " +
+                    "to write to");
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("The path is invalid");
+            }
+            catch (PathTooLongException)
+            {
+                MessageBox.Show("The path you've used is too long");
+            }
+            catch (DirectoryNotFoundException)
+            {
+                MessageBox.Show("The directory your file is in was not found");
+            }
+            catch (NotSupportedException)
+            {
+                MessageBox.Show("Your path is in an invalid format");
+            }
         }
     }
 }
